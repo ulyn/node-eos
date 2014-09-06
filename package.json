@@ -7,10 +7,9 @@
     "type": "git",
     "url": "https://github.com/ulyn/node-eos.git"
   },
-  "main": "lib/eos",
+  "main": "index",
   "dependencies": {
-    "hessian-proxy": "0.0.4",
-    "hessian.js": "^1.0.1",
-    "js-to-java": "^1.0.0"
+    "underscore": "^1.7.0",
+    "uuid": "^1.4.1"
   }
 }
