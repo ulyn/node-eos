@@ -2,6 +2,10 @@
   "author": "ulyn <ulyn@jmuca.com> (https://github.com/ulyn/eos)",
   "name": "eos",
   "description": "nodejs client for eos",
+  "keywords": [
+    "eos",
+    "node"
+  ],
   "version": "0.0.1",
   "repository": {
     "type": "git",
@@ -9,6 +13,7 @@
   },
   "main": "index",
   "dependencies": {
+    "node-zookeeper-client": "^0.2.1",
     "underscore": "^1.7.0",
     "uuid": "^1.4.1"
   }
