@@ -1,6 +1,6 @@
 {
   "author": "ulyn <ulyn@jmuca.com> (https://github.com/ulyn/eos)",
-  "name": "eos",
+  "name": "node-eos",
   "description": "nodejs client for eos",
   "keywords": [
     "eos",
@@ -16,5 +16,17 @@
     "node-zookeeper-client": "^0.2.1",
     "underscore": "^1.7.0",
     "uuid": "^1.4.1"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/ulyn/node-eos/issues"
+  },
+  "homepage": "https://github.com/ulyn/node-eos",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC"
 }
