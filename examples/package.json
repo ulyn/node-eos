@@ -1,21 +1,18 @@
 {
-  "author": "ulyn <ulyn@jmuca.com> (https://github.com/ulyn/eos)",
-  "name": "node-eos",
-  "description": "nodejs client for eos",
+  "author": "sunsharing",
+  "name": "ss-test",
+  "description": "ss-test nodejs client for eos",
   "keywords": [
-    "eos",
-    "node"
+    "ss-test"
   ],
-  "version": "0.0.2",
+  "version": "0.0.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/ulyn/node-eos.git"
   },
   "main": "index",
   "dependencies": {
-    "node-zookeeper-client": "^0.2.1",
-    "underscore": "^1.7.0",
-    "uuid": "^1.4.1"
+    "node-eos": "0.0.1"
   },
   "bugs": {
     "url": "https://github.com/ulyn/node-eos/issues"
