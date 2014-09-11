@@ -16,7 +16,7 @@ $ npm install ss-test
 
 ```javascript
 var eos = require("node-eos");
-var ssTest = require("ss-test");
+var ssTest = require("ss-eos-test");
 
 eos.init({
     zookeeper_ip: '127.0.0.1',
@@ -29,16 +29,11 @@ eos.init({
         "appid":{
             "testService":["sayHello"]
         }
-    },
-    advice:{
-        "appid":{
-            "testService":["sayHello"]
-        }
     }
 });
 
 setInterval(function(){
-    var testType = new ssTest.testType();
+    var testType = new ssTest.TestType();
     testType.testMap({"@type":"java.util.HashMap",a:1},"2",
         function(data){
             console.log("result："+JSON.stringify(data));

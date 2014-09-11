@@ -1,3 +1,3 @@
 module.exports = {
-    testType:require("./testType")
+    TestType:require("./TestType")
 }
