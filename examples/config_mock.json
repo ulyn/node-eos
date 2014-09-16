@@ -1,0 +1,17 @@
+{
+    "mock":"",
+    "service":{
+        "mock":"serviceMock",
+        "method":{
+            "testMap":"success",
+            "testList":"error"
+        }
+    },
+    "service2":{
+        "mock":"success",
+        "method":{
+            "testMap":"success",
+            "testList":"error"
+        }
+    }
+}
