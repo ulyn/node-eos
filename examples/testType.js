@@ -1,4 +1,4 @@
-module.exports = function(eos){
+module.exports = function(eos,mockConfig){
     function testType(){
         eos.Service.call(this);
         this.appId = "test";
@@ -9,7 +9,9 @@ module.exports = function(eos){
 
     testType.prototype.testMap = function(map,str,successFunc,errorFunc){
         var req = this._createReqPro("testMap",map,str);
-        eos.call(req,successFunc,errorFunc);
+        eos.call(req,successFunc,errorFunc,mockConfig);
     }
+    testType.prototype.testMap.paramKey = ["map","str"];
+
     return testType;
 }
