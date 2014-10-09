@@ -1,4 +1,4 @@
-module.exports = function(eos,mockConfig){
+module.exports = function(eos,cache){
     function testType(){
         eos.Service.call(this);
         this.appId = "test";
@@ -7,9 +7,9 @@ module.exports = function(eos,mockConfig){
     }
     eos.util.inherits(testType,eos.Service);
 
-    testType.prototype.testMap = function(map,str,successFunc,errorFunc){
-        var req = this._createReqPro("testMap",map,str);
-        eos.call(req,successFunc,errorFunc,mockConfig);
+    testType.prototype.testMap = function(map,str,successFunc,errorFunc,mock){
+        var req = this._createReqPro("testMap",mock,map,str);
+        eos.callRemote(req,successFunc,errorFunc,cache.mockConfig);
     }
     testType.prototype.testMap.paramKey = ["map","str"];
 
