@@ -10,7 +10,7 @@ eos.init({
     filter:[] //path为正则表达式 {"path":/appid/testService/*,filter:new Filter()}
 });
 var services = require("./index")(eos);
-var testType = new services.testType();
+var testType = new services.testType({"test":""});
 setInterval(function(){
     testType.testMap({"name":"张三"},"str_p",function(data){
         console.log("success",data);

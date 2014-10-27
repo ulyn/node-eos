@@ -1,6 +1,7 @@
 module.exports = function(eos,cache){
-    function testType(){
-        eos.Service.call(this);
+    function testType(rpcContext){
+        eos.Service.call(this,rpcContext);
+        console.info(this);
         this.appId = "test";
         this.serviceId = "testType";
         this.serviceVersion = "1.3";
