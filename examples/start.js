@@ -8,13 +8,13 @@ eos.init({
     use_mock: true, //全局控制是否使用mock
     mock_online:true,//mock数据是否使用在线，当user_mock为true时生效
     filter:[] //path为正则表达式 {"path":/appid/testService/*,filter:new Filter()}
-});
-var services = require("./index")(eos);
-var testType = new services.testType({"test":""});
-setInterval(function(){
+},callback);
+function callback(){
+    var services = require("./index")(eos);
+    var testType = new services.testType({"test":""});
     testType.testMap({"name":"张三"},"str_p",function(data){
         console.log("success",data);
     },function(e){
         console.error("error",e);
     },"success");
-},1000);
+}
